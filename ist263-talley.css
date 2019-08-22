@@ -6,12 +6,12 @@
   #nav-column a:hover, #nav-column a:active {color: #6F777D; font-weight: 500; text-decoration: underline; border: none; margin-left: 0;}
   #page-body {width: 78%; float:right; background-color: #f1f1f1; padding: 0.5em;}
   #header-panel {width: 80%; background-color: #fff; margin: 1em; padding: 1em; text-align: center;}
-  #header-panel h1 {font-family: Goudy, Times Roman, serif; font-size: 3em; line-height: 3em; text-align: center;  color: #D44500; padding: 0;}
-  #header-panel p {font-family: Goudy, Times Roman, serif; font-size: 2em; line-height: 2em; text-align: center; padding: 0; color:  #6F777D;}
+  #header-panel h1 {font-family: Goudy, Times Roman, serif; font-size: 3em; line-height: 3em; text-align: center; color: #D44500; padding: 0; margin: 0;}
+  #header-panel p {font-family: Goudy, Times Roman, serif; font-size: 2em; line-height: 2em; text-align: center; padding: 0; color:  #6F777D; margin: 0;}
   footer {width: 100%; clear: both; padding: 2em; text-align: center;}
-  h1 {font-family: Goudy, Times Roman, serif; font-size: 2.5em; line-height: 3em; font-weight: 700; color: #D44500;}
-  h2 {font-family: Goudy, Times Roman, serif; font-size: 2em; line-height: 2.5em; font-weight: 600; color: #D44500;}
-  h3 {font-family: Goudy, Times Roman, serif; font-size: 1.5em; line-height: 2em; font-weight: 600; color: #6F777D;}
+  h1 {font-family: Goudy, Times Roman, serif; font-size: 2.5em; line-height: 3em; font-weight: 700; color: #D44500; margin: 0;}
+  h2 {font-family: Goudy, Times Roman, serif; font-size: 2em; line-height: 2.5em; font-weight: 600; color: #D44500; margin: 0;}
+  h3 {font-family: Goudy, Times Roman, serif; font-size: 1.5em; line-height: 2em; font-weight: 600; color: #6F777D; margin: 0;}
   p {font-size: 1.2em; line-height: 1.5em; font-weight: 500;}
   strong {font-weight: 700;}
   table {width: 100%; margin: 0 auto;}
