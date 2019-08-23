@@ -1,7 +1,6 @@
 <style>
   #page-container {max-width:1024px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; color: #3E3D3C; padding: 0.5em;}
-#top-banner {width: 100%; height: 61px; padding: 4px 20px; background-color: #6F777D;}
-#top-banner img {max-height: 53pxpx; padding: 0 1em 0 0;}
+#top-banner {width: 100%; height: 61px; padding: 4px 30px; background-color: #6F777D;}
 #logo-container {display: inline-block; height:53px; background-color: #fff;}
   #nav-column {width:18%; float:left; padding: 5px; background-color: #f1f1f1; }
   #nav-column ul {list-style: none; margin-left: -5px;}
