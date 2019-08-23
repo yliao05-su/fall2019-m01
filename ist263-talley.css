@@ -1,8 +1,8 @@
 <style>
   #page-container {max-width:1024px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; color: #3E3D3C; padding: 0.5em;}
-#top-banner {width: 100%; min-height: 8em; background-color: #6F777D;}
-#top-banner img {max-height: 90%; padding: 0 1em 0 0;}
-#logo-container {display: inline-block; padding: 0.25em; background-color: #fff;}
+#top-banner {width: 100%; height: 61px; background-color: #6F777D;}
+#top-banner img {max-height: 53pxpx; padding: 0 1em 0 0;}
+#logo-container {display: inline-block; height:53px; padding: 4px; background-color: #fff;}
   #nav-column {width:18%; float:left; padding: 5px; background-color: #f1f1f1; }
   #nav-column ul {list-style: none; margin-left: -5px;}
   #nav-column a:link, #nav-column a:visited {color: #D44500; font-weight: 500; text-decoration: none; border: none; margin-left: 0;}
