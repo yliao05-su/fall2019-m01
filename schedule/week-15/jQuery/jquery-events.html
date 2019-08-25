@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IST 263 - jQuery Effects</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- Include jQuery via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Always try to load libraries (JS or CSS) via a CDN -->
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2>Simple jQuery Events</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Document Ready</h3>
+                    <p>Only run jQuery after document is ready (finished loading)</p>
+                    <pre>$(document).ready(function() { 
+                        //add statements here
+                        });
+                    </pre>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Adding Event Listeners</h3>
+                    <script>
+                        $(document).ready(function() {
+                            /*
+                            This is a good way to add JS that is not inline. 
+                            */
+                            $("p").click(function() {
+
+                                //'this' is a special object that refers to the element that was called on
+                                $(this).hide();
+                            });
+                        });
+                    </script>
+                    <p>If you click on me, I will disappear.</p>
+                    <!--
+                    <p>Click me away!</p>
+                    <p>Click me too!</p>
+                    -->
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

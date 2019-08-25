@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IST 263 - Javascript, jQuery Form Validation</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- Include jQuery via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Always try to load libraries (JS or CSS) via a CDN -->
+
+    <!-- Lets include the jQuery Sticky Library -->
+    <script src="./js/jquery.knob.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row text-center header">
+                <div class="col-md-12" style="z-index: 5;">
+                    <div class="jumbotron">
+                        <h2>JavaScript - Knob</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row header ">
+                <div class="col-md-12">
+                    <h3>Now you try it...</h3>
+                    <p class="text-left">
+                        <ol>
+                            <li>See a Demo - <a href="http://anthonyterrien.com/demo/knob/" target="_blank">http://anthonyterrien.com/demo/knob/</a></li>
+                            <li>Include the jQuery Knob JS File</li>
+                            <li>'Bind' knob to the appropriate element</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+            <h2>Create a Knob which looks like this</h2>
+            <input type="text" value="75" class="dial">
+            <script>
+                $(function() {
+                    $(".dial").knob();
+                });
+            </script>
+    </main>
+</body>
+
+</html>

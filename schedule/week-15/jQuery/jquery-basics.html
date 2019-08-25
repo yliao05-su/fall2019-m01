@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IST 263 - Javascript, jQuery Introduction</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- Include jQuery via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Always try to load libraries (JS or CSS) via a CDN -->
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2>JavaScript - jQuery</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>What is jQuery?</h3>
+                    <p class="text-left">
+                        jQuery is an open source Javascript framework. Just like Bootstrap is a CSS framework. jQuery provides 'wrappers' or functions that simplify a lot of native JS functions.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Including jQuery</h3>
+                    <p>The line below includes the jQuery library hosted at Google CDN</p>
+                    <pre>
+                        <code><p>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;</p></code>
+                    </pre>
+                    <p>You can also download it locally and include it but I would recommend otherwise.</p>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Calling jQuery Functions</h3>
+                    <pre>
+                        <code><p>document => jQuery => $</p></code>
+                    </pre>
+                </div>
+            </div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Example - Writing to the DOM</h3>
+                    <script>
+                        function writeToDOM() {
+                            /*
+                                //This is the original JS 
+    document.getElementById("emptyContainer").innerHTML = "I can manipulate the DOM...on the fly";
+
+                                Using jQuery you can achieve the same results with a much simpler line of code
+                            */
+                            jQuery("#emptyContainer").html("I can manipulate the DOM...on the fly");
+
+                            /*
+                            You can also write the above line using $
+                            */
+                            $("#emptyContainer").html("I can manipulate the DOM...on the fly");
+                        }
+
+                        function clearDOM() {
+                            //document.getElementById("emptyContainer").innerHTML = "";
+
+                            jQuery("#emptyContainer").html("");
+                        }
+                    </script>
+                    <button class="btn btn-default" onclick="writeToDOM()">Click Me</button>
+                    <button class="btn btn-warning" onclick="clearDOM()">Clear DOM</button>
+
+                    <div id="emptyContainer"></div>
+                    <br><br>
+                    <pre>
+document.getElementById("emptyContainer") => jQuery("#emptyContainer") => $("#emptyContainer")
+
+                    </pre>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>jQuery Selectors</h3>
+                    <p>DOM Selectors in jQuery work similar to CSS3 selectors</p>
+                    <pre>
+
+                        <p>$("p") - selects all HTML 'p' element(s)</p>
+                        <p>$("#emptyContainer") - selects HTML element whose's ID is emptyContainer</p>
+                        <p>$(".container") - selects HTML element(s) whose's CLASS is emptyContainer</p>
+
+                    </pre>
+                    <p>All simple and advanced CSS3 selectors work similarly in jQuery. See <a target="_blank" href="https://www.w3schools.com/jquery/jquery_selectors.asp">jQuery Selectors</a> in action. </p>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>Changing CSS</h3>
+                    <script>
+                        function changeBG(color) {
+                            //I can call a function from inside a function
+                            writeToDOM();
+
+                            /*
+                            document.getElementById("emptyContainer").style.backgroundColor = color;
+                            document.getElementById("emptyContainer").style.color = "#fff";
+                            */
+
+                            //This is called 'setting' a CSS property
+                            $("#emptyContainer").css("background-color", color);
+                            $("#emptyContainer").css("color", "white");
+
+                            //You can also 'get' a CSS property
+                            alert($("#emptyContainer").css("background-color"));
+                        }
+                    </script>
+                    <button class="btn btn-default" onclick="changeBG('red')">Change Background - Red</button>
+                    <button class="btn btn-primary" onclick="changeBG('blue')">Change Background - Blue</button>
+
+                    <br><br>
+                    <a href="https://www.w3schools.com/jquery/jquery_css.asp" target="_blank">Read more on Changing CSS with jQuery</a>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <h3>You try now...</h3>
+                    <script>
+                        function changeFontColor() {
+                            //select all h3 elements
+                            $("h3").css("color", "red")
+                            $(".jumbotron").css("background-color", "blue")
+                            $("h2").css("color", "white")
+                        }
+                    </script>
+                    <p>
+                        Write JS to change the color of all H3 on the page to 'red' when the button below is clicked
+                        <a class="btn btn-default" onclick="changeFontColor()">Change H3 Color</a>
+                    </p>
+
+
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

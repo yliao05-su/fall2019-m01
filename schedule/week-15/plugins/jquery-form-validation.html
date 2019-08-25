@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IST 263 - Javascript, jQuery Form Validation</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Include jQuery via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Always try to load libraries (JS or CSS) via a CDN -->
+
+
+    <!-- Lets include the jQuery Validate Library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <style>
+        .cmxform label {
+            display: inline-block;
+            width: 550px;
+        }
+        
+        .cmxform label.error {
+            display: inline;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2>JavaScript - Form Validation</h2>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    $("#commentForm").validate();
+                })
+            </script>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="row header">
+                <div class="col-md-12">
+                    <form class="cmxform" id="commentForm" method="get" action="" novalidate="novalidate">
+                        <fieldset>
+                            <legend>Please provide your name, email address and a comment</legend>
+                            <p>
+                                <label for="cname">Name (required, at least 2 characters)</label>
+                                <input id="cname" name="name" minlength="2" type="text" required="" aria-required="true">
+                            </p>
+                            <p>
+                                <label for="cemail">E-Mail (required)</label>
+                                <input id="cemail" type="email" name="email" required="" aria-required="true">
+                            </p>
+                            <p>
+                                <label for="curl">URL (optional)</label>
+                                <input id="curl" type="url" name="url">
+                            </p>
+                            <p>
+                                <label for="ccomment">Your comment (required)</label>
+                                <textarea id="ccomment" name="comment" required="" aria-required="true"></textarea>
+                            </p>
+                            <p>
+                                <input class="submit" type="submit" value="Submit">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <div class="row header">
+                <div class="col-md-12">
+                    <h3>How do we get started?</h3>
+                    <p class="text-left">
+                        <ol>
+                            <li>See a Demo - <a href="https://jqueryvalidation.org/files/demo/" target="_blank">https://jqueryvalidation.org/files/demo/</a></li>
+                            <li>Include the jQuery Validate JS File</li>
+                            <li>'Bind' validate to the HTML Form</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+            <div class="spacer">&nbsp;</div>
+            <div class="spacer">&nbsp;</div>
+            <h3>Detailed Documentation at <a href="https://jqueryvalidation.org/documentation/" target="_blank">https://jqueryvalidation.org/documentation/</a></h3>
+    </main>
+</body>
+
+</html>
