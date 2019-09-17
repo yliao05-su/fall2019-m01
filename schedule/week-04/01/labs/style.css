@@ -1,7 +1,11 @@
 body {
     background-color: #ccc;   
 }
-header h4 {
+h4 {
+    color: blue;
+    font-size: 16px;
+}
+h4.orange {
     color: orange;
     text-align: center;
 }
@@ -11,12 +15,9 @@ thead {
 }
 tbody {
     background-color: #f2f2f2;
-    color: #eaeaea;
+    color: #666;
 }
-h4 {
-    color: blue;
-    font-size: 16px;
-}
+
 
 /* 
   Quick Lookup Guide
