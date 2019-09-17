@@ -1,5 +1,21 @@
 body {
-    background-color: red;   
+    background-color: #ccc;   
+}
+h4 {
+    color: orange;
+    text-aling: center;
+}
+thead {
+    background-color: #eaeaea;
+    color: #333;
+}
+tbody {
+    background-color: #f2f2f2;
+    color: #eaeaea;
+}
+h4 {
+    color: blue;
+    font-size: 16px;
 }
 
 /* 
